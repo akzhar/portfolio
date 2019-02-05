@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+
+  background-color: $lightbrown;
+
+  z-index: 2;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 460px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  outline: 1px solid green; //temp
+
+}
+
+.nav__item {
+  margin: 20px 0;
+}
+
+.nav__link {
+  display: inline;
+  padding: 20px;
+}

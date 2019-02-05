@@ -1,0 +1,33 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 300px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  outline: 1px solid green;
+
+  list-style: none;
+}
+
+.social-list__btn {
+  position: relative;
+
+  width: 62px;
+
+  font-size: 0;
+}
+
+.social-list__btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-list .btn:hover > svg {
+  fill: rgba(249,205,84, 0.6);
+}

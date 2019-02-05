@@ -1,0 +1,36 @@
+@font-face { //локальное подключение шрифтов
+  font-weight: normal;
+  font-family: "PTSans";
+  font-style: normal;
+  font-display: optional;
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
+  url("../fonts/PTSans-Regular.woff") format("woff");
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "variables/variables.scss";
+
+@import "normalize/normalize.min.scss";
+
+@import "srvc/srvc.scss";
+
+@import "body/body.scss";
+
+@import "nav/nav.scss";
+
+@import "aboutme/aboutme.scss";
+
+@import "whoiam/whoiam.scss";
+
+@import "skills/skills.scss";
+
+@import "portfolio/portfolio.scss";
+
+@import "projects/projects.scss";
+
+@import "contacts/contacts.scss";
+
+@import "social-list/social-list.scss";

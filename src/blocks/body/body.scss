@@ -1,0 +1,17 @@
+.body {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: $s_1;
+  line-height: $l_1;
+}
+
+@media (min-width: $width-tablet) {
+  .body {
+    // width: 740px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .body {
+    // width: 1420px;
+  }
+}

@@ -1,0 +1,22 @@
+.aboutme {
+  background-color: $yellow;
+
+  text-align: center;
+}
+
+.aboutme__wrapper {
+  width: 460px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  outline: 1px solid red; //temp
+}
+
+.aboutme .whoiam {
+  padding-top: 80px;
+}
+
+.aboutme__btn {
+  margin-top: 40px;
+  width: 300px;
+}

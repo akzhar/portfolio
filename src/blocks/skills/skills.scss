@@ -1,0 +1,47 @@
+.skills {
+  outline: 1px solid green; //temp
+}
+
+.skills__header {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item {
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+
+    transform: translate(0, -50%);
+    content: "";
+
+    width: 10px;
+    height: 2px;
+
+    background-color: $lightbrown;
+  }
+
+  &::before {
+    left: - 25px;
+  }
+
+  &::after {
+    right: -25px;
+  }
+
+}

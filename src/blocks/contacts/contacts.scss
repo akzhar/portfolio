@@ -1,0 +1,38 @@
+.contacts {
+  background-color: #000000;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.contacts__wrapper {
+  width: 460px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  outline: 1px solid red; //temp
+}
+
+.contacts__header {
+  margin: 0;
+  margin-bottom: 25px;
+
+  outline: 1px solid green;
+}
+
+.contacts__email {
+  display: inline-block;
+  vertical-align: baseline;
+
+  color: #ffffff;
+  margin-bottom: 40px;
+
+  &:hover {
+    color: $yellow;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba(249,205,84, 0.6);
+  }
+}

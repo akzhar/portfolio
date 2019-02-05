@@ -1,0 +1,31 @@
+.head {
+  text-transform: uppercase;
+  font-size: $s_3;
+  line-height: $l_3;
+
+}
+
+.btn {
+  display: block;
+  padding: 20px 0;
+  margin: 0 auto;
+
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  border-radius: 10px;
+
+  background-color: $lightbrown;
+
+  &:hover {
+    background-color: rgba(78, 31, 1, 0.8);
+  }
+
+  &:active {
+    background-color: $darkbrown;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

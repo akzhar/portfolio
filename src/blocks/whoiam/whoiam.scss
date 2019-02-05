@@ -1,0 +1,37 @@
+.whoiam {
+  outline: 1px solid green; //temp
+}
+
+.whoiam__header {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.whoiam__position {
+  display: block;
+  margin-bottom: 40px;
+
+  font-size: $s_2;
+  line-height: $l_2;
+  font-weight: 400;
+}
+
+.whoiam__description {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.whoiam__githublink {
+  color: #000000;
+  font-weight: 600;
+
+  &:hover {
+    color: $lightbrown;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba(140,74,13,0.6);
+  }
+
+}
