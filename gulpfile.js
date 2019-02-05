@@ -41,13 +41,7 @@ gulp.task('clean', function (cb) { // задача - вызывается как
 
 gulp.task("copy", function () { // задача - вызывается как скрипт из package.json
   gulp.src([  // источник
-    "src/fonts/**/*.{woff,woff2}",
-    "src/projects/sedona/**/*.*",
-    "src/projects/barbershop/**/*.*",
-    "src/projects/catenergy/**/*.*",
-    "src/projects/neophyte/**/*.*",
-    "src/projects/nerds/**/*.*",
-    "src/projects/technomart/**/*.*"
+    "src/fonts/**/*.{woff,woff2}"
     ],
     {
       base: "src"
