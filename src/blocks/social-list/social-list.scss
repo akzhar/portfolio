@@ -1,9 +1,8 @@
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
-  width: 300px;
+  width: 250px;
 
   margin: 0 auto;
   padding: 0;
@@ -13,21 +12,53 @@
   list-style: none;
 }
 
-.social-list__btn {
+.social-list__item {
   position: relative;
 
-  width: 62px;
-
-  font-size: 0;
+  margin: 0 35px 20px 0;
 }
 
-.social-list__btn svg {
+.social-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social-list__link {
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.social-list__link svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.social-list .btn:hover > svg {
-  fill: rgba(249,205,84, 0.6);
+.social-list__link:hover > svg {
+  fill: rgba(249, 205, 84, 0.6);
+}
+
+@media (min-width: $width-tablet) {
+  .social-list {
+    width: 350px;
+  }
+
+  .social-list__item {
+    margin-right: 55px;
+  }
+
+  .social-list__link {
+    padding: 40px;
+  }
+
+  .social-list__link svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .social-list {
+
+  }
 }

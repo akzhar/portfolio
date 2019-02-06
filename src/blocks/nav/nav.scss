@@ -29,5 +29,16 @@
 
 .nav__link {
   display: inline;
-  padding: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .nav__list {
+  width: 700px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .nav__list {
+  width: 1420px;
+  }
 }

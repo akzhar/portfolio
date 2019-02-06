@@ -3,8 +3,7 @@
 }
 
 .skills__header {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 20px 40px 20px;
 }
 
 .skills__list {
@@ -43,5 +42,21 @@
   &::after {
     right: -25px;
   }
+}
 
+.skills__btn {
+  margin: 20px auto;
+  width: 300px;
+}
+
+@media (min-width: $width-tablet) {
+  .skills {
+
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .skills {
+    width: 50%;
+  }
 }

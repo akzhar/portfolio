@@ -6,27 +6,41 @@
 
 .portfolio__wrapper {
   width: 460px;
+
   margin: 0 auto;
-  padding: 40px 0;
+  padding-top: 100px; //чтобы шапка не накрыла заголовок
+  padding-bottom: 40px;
 
   outline: 1px solid red; //temp
 }
 
 .portfolio__header,
 .portfolio__intro {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 20px 40px 20px;
 
   outline: 1px solid green;
 }
 
 .portfolio__question {
   display: block;
-  margin-bottom: 25px;
+  margin: 0 20px 20px 20px;
 
   outline: 1px solid green;
 }
 
 .portfolio__btn {
   width: 300px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .portfolio__wrapper {
+  width: 700px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .portfolio__wrapper{
+  width: 1420px;
+  }
 }

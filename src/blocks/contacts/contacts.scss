@@ -14,8 +14,7 @@
 }
 
 .contacts__header {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 20px 40px 20px;
 
   outline: 1px solid green;
 }
@@ -36,3 +35,16 @@
     color: rgba(249,205,84, 0.6);
   }
 }
+
+@media (min-width: $width-tablet) {
+  .contacts__wrapper {
+  width: 700px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .contacts__wrapper {
+  width: 1420px;
+  }
+}
+
