@@ -6,12 +6,14 @@
 
 @media (min-width: $width-tablet) {
   .body {
-    // width: 740px;
+    font-size: $s_2;
+    line-height: $l_2;
   }
 }
 
 @media (min-width: $width-desktop) {
   .body {
-    // width: 1420px;
+    font-size: $s_3;
+    line-height: $l_3;
   }
 }

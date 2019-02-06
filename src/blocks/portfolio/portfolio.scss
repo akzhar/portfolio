@@ -10,37 +10,35 @@
   margin: 0 auto;
   padding-top: 100px; //чтобы шапка не накрыла заголовок
   padding-bottom: 40px;
-
-  outline: 1px solid red; //temp
 }
 
-.portfolio__header,
-.portfolio__intro {
+.portfolio__header {
   margin: 0 20px 40px 20px;
+}
 
-  outline: 1px solid green;
+.portfolio__intro {
+  margin: 0 20px 20px 20px;
 }
 
 .portfolio__question {
   display: block;
-  margin: 0 20px 20px 20px;
-
-  outline: 1px solid green;
+  margin: 40px 20px 20px 20px;
 }
 
 .portfolio__btn {
-  width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $width-tablet) {
   .portfolio__wrapper {
-  width: 700px;
+    width: 700px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .portfolio__wrapper{
-  width: 1420px;
+    width: 1420px;
+
+    padding-top: 120px; //чтобы шапка не накрыла заголовок
   }
 }

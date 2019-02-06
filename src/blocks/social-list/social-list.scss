@@ -7,8 +7,6 @@
   margin: 0 auto;
   padding: 0;
 
-  outline: 1px solid green;
-
   list-style: none;
 }
 
@@ -23,8 +21,11 @@
 }
 
 .social-list__link {
-  border-radius: 50%;
+  width: auto;
+
   padding: 30px;
+
+  border-radius: 50%;
 }
 
 .social-list__link svg {
@@ -54,11 +55,5 @@
   .social-list__link svg {
     width: 35px;
     height: 35px;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .social-list {
-
   }
 }

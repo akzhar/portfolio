@@ -9,14 +9,10 @@
   width: 460px;
   margin: 0 auto;
   padding: 40px 0;
-
-  outline: 1px solid red; //temp
 }
 
 .contacts__header {
   margin: 0 20px 40px 20px;
-
-  outline: 1px solid green;
 }
 
 .contacts__email {
@@ -38,13 +34,13 @@
 
 @media (min-width: $width-tablet) {
   .contacts__wrapper {
-  width: 700px;
+    width: 700px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .contacts__wrapper {
-  width: 1420px;
+    width: 1420px;
   }
 }
 

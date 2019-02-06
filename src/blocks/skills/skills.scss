@@ -1,7 +1,3 @@
-.skills {
-  outline: 1px solid green; //temp
-}
-
 .skills__header {
   margin: 0 20px 40px 20px;
 }
@@ -10,9 +6,10 @@
   display: flex;
   flex-direction: column;
 
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .skills__item {
@@ -46,17 +43,19 @@
 
 .skills__btn {
   margin: 20px auto;
-  width: 300px;
-}
-
-@media (min-width: $width-tablet) {
-  .skills {
-
-  }
 }
 
 @media (min-width: $width-desktop) {
   .skills {
     width: 50%;
+  }
+
+  .skills__item {
+
+    &::before,
+    &::after {
+      width: 15px;
+      height: 4px;
+    }
   }
 }

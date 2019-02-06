@@ -1,7 +1,21 @@
 .aboutme {
+  position: relative;
+
   background-color: $yellow;
 
   text-align: center;
+
+  &::after { //треугольник
+    position: absolute;
+    bottom: -340px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+    content: "";
+
+    border: 260px solid transparent;
+    border-top: 80px solid $yellow;
+  }
 }
 
 .aboutme__wrapper {
@@ -9,19 +23,32 @@
   margin: 0 auto;
   padding-top: 100px; //чтобы шапка не накрыла заголовок
   padding-bottom: 25px;
-
-  outline: 1px solid red; //temp
 }
 
 @media (min-width: $width-tablet) {
   .aboutme__wrapper {
-  width: 700px;
+    width: 700px;
+  }
+
+  .aboutme::after { //треугольник
+    bottom: -440px;
+    border-width: 360px;
+    border-top-width: 80px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .aboutme__wrapper {
-  width: 1420px;
-  display: flex;
+    display: flex;
+
+    width: 1420px;
+
+    padding-top: 120px; //чтобы шапка не накрыла заголовок
+  }
+
+  .aboutme::after { //треугольник
+    bottom: -740px;
+    border-width: 660px;
+    border-top-width: 80px;
   }
 }

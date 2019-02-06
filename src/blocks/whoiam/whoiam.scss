@@ -1,13 +1,10 @@
-.whoiam {
-  outline: 1px solid green; //temp
-}
-
 .whoiam__header {
   margin: 0 20px 10px 20px;
 }
 
 .whoiam__position {
   display: block;
+
   margin: 0 20px 40px 20px;
 
   font-size: $s_2;
@@ -34,14 +31,13 @@
   }
 }
 
-@media (min-width: $width-tablet) {
-  .whoiam {
-
-  }
-}
-
 @media (min-width: $width-desktop) {
   .whoiam {
     width: 50%;
+  }
+
+  .whoiam__position {
+    font-size: $s_3;
+    line-height: $l_3;
   }
 }

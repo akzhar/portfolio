@@ -7,8 +7,6 @@
   padding: 0;
 
   list-style: none;
-
-  outline: 1px solid green;
 }
 
 .projects__item {
@@ -21,30 +19,30 @@
 
   background-color: #ffffff;
 
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .projects__item img {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .projects__info {
   display: none;
-
   position: absolute;
   bottom: 0;
   left: 0;
 
   background-color: $lightbrown;
 
-  border-top: 1px solid #000000;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
 }
 
 .projects__item:hover .projects__info {
   display: block;
+}
+
+.projects__item:active {
+  opacity: 0.6;
 }
 
 .projects__header {
@@ -59,14 +57,16 @@
 .projects__description {
   margin: 10px 0;
   padding: 0 25px;
+
   color: #ffffff;
 }
 
 @media (min-width: $width-tablet) {
   .projects {
-  width: 620px;
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 620px;
   }
 
   .projects__item {
@@ -80,7 +80,7 @@
 
 @media (min-width: $width-desktop) {
   .projects {
-  width: 1260px;
+    width: 1260px;
   }
 
   .projects__item:nth-child(2n) {
@@ -89,5 +89,10 @@
 
   .projects__item:nth-child(4n) {
     margin-right: 0;
+  }
+
+  .projects__description {
+    font-size: $s_2;
+    line-height: $l_2;
   }
 }
