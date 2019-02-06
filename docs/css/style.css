@@ -202,18 +202,8 @@ template {
     width: 700px; } }
 
 .aboutme {
-  position: relative;
   background-color: #f9cd54;
   text-align: center; }
-  .aboutme::after {
-    position: absolute;
-    bottom: -340px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    content: "";
-    border: 260px solid transparent;
-    border-top: 80px solid #f9cd54; }
 
 .aboutme__wrapper {
   width: 460px;
@@ -223,21 +213,13 @@ template {
 
 @media (min-width: 720px) {
   .aboutme__wrapper {
-    width: 700px; }
-  .aboutme::after {
-    bottom: -440px;
-    border-width: 360px;
-    border-top-width: 80px; } }
+    width: 700px; } }
 
 @media (min-width: 1440px) {
   .aboutme__wrapper {
     display: flex;
     width: 1420px;
-    padding-top: 120px; }
-  .aboutme::after {
-    bottom: -740px;
-    border-width: 660px;
-    border-top-width: 80px; } }
+    padding-top: 120px; } }
 
 .whoiam__header {
   margin: 0 20px 10px 20px; }
