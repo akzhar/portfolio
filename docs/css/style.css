@@ -161,6 +161,7 @@ template {
     width: 400px; } }
 
 .body {
+  width: 100%;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px; }
@@ -203,6 +204,7 @@ template {
 
 .aboutme {
   background-color: #f9cd54;
+  min-width: 460px;
   text-align: center; }
 
 .aboutme__wrapper {
@@ -262,10 +264,12 @@ template {
   list-style: none; }
 
 .skills__item {
-  position: relative;
   margin: 0 auto;
   margin-bottom: 10px; }
-  .skills__item::before, .skills__item::after {
+
+.skills__item span {
+  position: relative; }
+  .skills__item span::before, .skills__item span::after {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -274,9 +278,9 @@ template {
     width: 10px;
     height: 2px;
     background-color: #8c4a0d; }
-  .skills__item::before {
+  .skills__item span::before {
     left: -25px; }
-  .skills__item::after {
+  .skills__item span::after {
     right: -25px; }
 
 .skills__btn {
@@ -291,6 +295,7 @@ template {
 
 .portfolio {
   background-color: #c0cbc3;
+  min-width: 460px;
   text-align: center; }
 
 .portfolio__wrapper {
@@ -389,6 +394,7 @@ template {
 
 .contacts {
   background-color: #000000;
+  min-width: 460px;
   text-align: center;
   color: #ffffff; }
 
