@@ -140,7 +140,7 @@ template {
   display: block;
   padding: 20px;
   margin: 0 auto;
-  width: 300px;
+  width: 260px;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
@@ -161,7 +161,6 @@ template {
     width: 400px; } }
 
 .body {
-  width: 100%;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px; }
@@ -185,9 +184,8 @@ template {
 
 .nav__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  width: 460px;
+  width: 300px;
   margin: 0 auto;
   padding: 0;
   list-style: none; }
@@ -196,7 +194,8 @@ template {
   margin: 20px 0; }
 
 .nav__link {
-  display: inline; }
+  display: inline;
+  padding: 20px 10px; }
 
 @media (min-width: 720px) {
   .nav__list {
@@ -204,11 +203,11 @@ template {
 
 .aboutme {
   background-color: #f9cd54;
-  min-width: 460px;
+  min-width: 300px;
   text-align: center; }
 
 .aboutme__wrapper {
-  width: 460px;
+  width: 300px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 25px; }
@@ -295,11 +294,11 @@ template {
 
 .portfolio {
   background-color: #c0cbc3;
-  min-width: 460px;
+  min-width: 300px;
   text-align: center; }
 
 .portfolio__wrapper {
-  width: 460px;
+  width: 300px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 40px; }
@@ -394,12 +393,12 @@ template {
 
 .contacts {
   background-color: #000000;
-  min-width: 460px;
+  min-width: 300px;
   text-align: center;
   color: #ffffff; }
 
 .contacts__wrapper {
-  width: 460px;
+  width: 300px;
   margin: 0 auto;
   padding: 40px 0; }
 
