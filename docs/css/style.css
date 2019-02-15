@@ -352,8 +352,10 @@ template {
   background-color: #8c4a0d;
   border-radius: 0 0 20px 20px; }
 
-.projects__item:hover .projects__info {
-  display: block; }
+.projects__item:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5); }
+  .projects__item:hover .projects__info {
+    display: block; }
 
 .projects__item:active {
   opacity: 0.6; }
@@ -361,6 +363,7 @@ template {
 .projects__header {
   padding: 0;
   margin: 10px 0;
+  text-transform: uppercase;
   color: #f9cd54;
   font-size: 22px;
   line-height: 30px; }
