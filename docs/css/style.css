@@ -222,8 +222,11 @@ template {
     width: 1420px;
     padding-top: 120px; } }
 
+.whoiam {
+  margin-bottom: 50px; }
+
 .whoiam__header {
-  margin: 0 20px 10px 20px; }
+  margin: 0 20px 5px 20px; }
 
 .whoiam__position {
   display: block;
