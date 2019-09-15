@@ -147,12 +147,12 @@ template {
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 10px;
-  background-color: #8c4a0d; }
+  background-color: #6389df; }
   .btn:hover {
-    background-color: rgba(78, 31, 1, 0.8); }
+    background-color: #1f2b6c; }
   .btn:active {
-    background-color: #4e1f01;
-    color: rgba(255, 255, 255, 0.6); }
+    background-color: #1f2b6c;
+    color: #6389df; }
 
 @media (min-width: 1440px) {
   .head {
@@ -179,7 +179,7 @@ template {
   position: fixed;
   width: 100%;
   padding: 10px 0;
-  background-color: #8c4a0d;
+  background-color: #6389df;
   z-index: 2; }
 
 .nav__list {
@@ -196,13 +196,18 @@ template {
 .nav__link {
   display: inline;
   padding: 20px 10px; }
+  .nav__link:hover {
+    background-color: #6389df;
+    color: #1f2b6c; }
+  .nav__link:active {
+    background-color: #6389df; }
 
 @media (min-width: 720px) {
   .nav__list {
     width: 700px; } }
 
 .aboutme {
-  background-color: #f9cd54;
+  background-color: #a3ccf4;
   min-width: 300px;
   text-align: center; }
 
@@ -234,16 +239,16 @@ template {
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
-  color: #8c4a0d; }
+  color: #6389df; }
 
 .whoiam__description {
   margin: 0 20px 20px 20px; }
 
 .whoiam__link {
-  color: #8c4a0d;
+  color: #6389df;
   font-weight: 600; }
   .whoiam__link:hover {
-    color: #4e1f01;
+    color: #1f2b6c;
     text-decoration: none; }
   .whoiam__link:active {
     color: rgba(78, 31, 1, 0.6); }
@@ -266,12 +271,10 @@ template {
   list-style: none; }
 
 .skills__item {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 10px; }
-
-.skills__item span {
-  position: relative; }
-  .skills__item span::before, .skills__item span::after {
+  .skills__item::before, .skills__item::after {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -279,10 +282,10 @@ template {
     content: "";
     width: 10px;
     height: 2px;
-    background-color: #8c4a0d; }
-  .skills__item span::before {
+    background-color: #6389df; }
+  .skills__item::before {
     left: -25px; }
-  .skills__item span::after {
+  .skills__item::after {
     right: -25px; }
 
 .skills__btn {
@@ -296,7 +299,7 @@ template {
     height: 4px; } }
 
 .portfolio {
-  background-color: #c0cbc3;
+  background-color: #c7bab1;
   min-width: 300px;
   text-align: center; }
 
@@ -353,7 +356,7 @@ template {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #8c4a0d;
+  background-color: #6389df;
   border-radius: 0 0 20px 20px; }
 
 .projects__item:hover {
@@ -368,7 +371,7 @@ template {
   padding: 0;
   margin: 10px 0;
   text-transform: uppercase;
-  color: #f9cd54;
+  color: #1f2b6c;
   font-size: 22px;
   line-height: 30px; }
 
@@ -418,10 +421,10 @@ template {
   color: #ffffff;
   margin-bottom: 40px; }
   .contacts__email:hover {
-    color: #f9cd54;
+    color: #6389df;
     text-decoration: none; }
   .contacts__email:active {
-    color: rgba(249, 205, 84, 0.6); }
+    color: #6389df; }
 
 @media (min-width: 720px) {
   .contacts__wrapper {
@@ -459,7 +462,7 @@ template {
           transform: translate(-50%, -50%); }
 
 .social-list__link:hover > svg {
-  fill: rgba(249, 205, 84, 0.6); }
+  fill: #6389df; }
 
 @media (min-width: 720px) {
   .social-list {

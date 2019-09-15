@@ -10,7 +10,6 @@
 
 .nav__list {
   display: flex;
-  // flex-wrap: wrap;
   justify-content: space-around;
 
   width: 300px;
@@ -27,6 +26,15 @@
 .nav__link {
   display: inline;
   padding: 20px 10px;
+
+  &:hover {
+    background-color: $lightbrown;
+    color: $darkbrown;
+  }
+
+  &:active {
+    background-color: $lightbrown;
+  }
 }
 
 @media (min-width: $width-tablet) {

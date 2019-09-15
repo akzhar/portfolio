@@ -25,12 +25,12 @@
   margin-bottom: 40px;
 
   &:hover {
-    color: $yellow;
+    color: $lightbrown;
     text-decoration: none;
   }
 
   &:active {
-    color: rgba(249,205,84, 0.6);
+    color: $lightbrown;
   }
 }
 

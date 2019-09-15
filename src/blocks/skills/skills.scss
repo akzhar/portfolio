@@ -13,12 +13,10 @@
 }
 
 .skills__item {
+  position: relative;
+
   margin: 0 auto;
   margin-bottom: 10px;
-}
-
-.skills__item span {
-  position: relative;
 
   &::before,
   &::after {

@@ -22,12 +22,12 @@
   background-color: $lightbrown;
 
   &:hover {
-    background-color: rgba(78, 31, 1, 0.8);
+    background-color: $darkbrown;
   }
 
   &:active {
     background-color: $darkbrown;
-    color: rgba(255, 255, 255, 0.6);
+    color: $lightbrown;
   }
 }
 
