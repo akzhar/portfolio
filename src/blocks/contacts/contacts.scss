@@ -1,10 +1,10 @@
 .contacts {
-  background-color: #000000;
+  background-color: black;
 
   min-width: 300px;
 
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
 
 .contacts__wrapper {
@@ -13,25 +13,8 @@
   padding: 40px 0;
 }
 
-.contacts__header {
-  margin: 0 20px 40px 20px;
-}
-
 .contacts__email {
-  display: inline-block;
-  vertical-align: baseline;
-
-  color: #ffffff;
-  margin-bottom: 40px;
-
-  &:hover {
-    color: $lightbrown;
-    text-decoration: none;
-  }
-
-  &:active {
-    color: $lightbrown;
-  }
+  margin: 0 0 40px 0;
 }
 
 @media (min-width: $width-tablet) {

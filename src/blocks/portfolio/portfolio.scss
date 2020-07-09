@@ -10,12 +10,7 @@
   width: 300px;
 
   margin: 0 auto;
-  padding-top: 100px; //чтобы шапка не накрыла заголовок
-  padding-bottom: 40px;
-}
-
-.portfolio__header {
-  margin: 0 20px 40px 20px;
+  padding: 40px 0;
 }
 
 .portfolio__intro {
@@ -24,7 +19,7 @@
 
 .portfolio__question {
   display: block;
-  margin: 40px 20px 20px 20px;
+  margin: 20px 0;
 }
 
 .portfolio__btn {
@@ -40,7 +35,5 @@
 @media (min-width: $width-desktop) {
   .portfolio__wrapper{
     width: 1420px;
-
-    padding-top: 120px; //чтобы шапка не накрыла заголовок
   }
 }

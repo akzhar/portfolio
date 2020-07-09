@@ -1,7 +1,22 @@
 .head {
+  margin: 0 0 20px 0;
   text-transform: uppercase;
   font-size: $s_3;
   line-height: $l_3;
+}
+
+.link {
+  color: $blue;
+  font-weight: 600;
+
+  &:hover {
+    color: $darkblue;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba(78,31,1,0.6);
+  }
 }
 
 .btn {
@@ -12,22 +27,22 @@
   width: 260px;
 
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
 
   border-radius: 10px;
 
-  background-color: $lightbrown;
+  background-color: $blue;
 
   &:hover {
-    background-color: $darkbrown;
+    background-color: $darkblue;
   }
 
   &:active {
-    background-color: $darkbrown;
-    color: $lightbrown;
+    background-color: $darkblue;
+    color: $blue;
   }
 }
 

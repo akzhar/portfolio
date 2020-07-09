@@ -1,9 +1,8 @@
 .nav {
   position: fixed;
   width: 100%;
-  padding: 10px 0;
 
-  background-color: $lightbrown;
+  background-color: $blue;
 
   z-index: 2;
 }
@@ -12,33 +11,30 @@
   display: flex;
   justify-content: space-around;
 
-  width: 300px;
+  width: 700px;
   margin: 0 auto;
   padding: 0;
 
   list-style: none;
 }
 
-.nav__item {
-  margin: 20px 0;
-}
-
-.nav__link {
-  display: inline;
-  padding: 20px 10px;
+.nav__btn {
+  width: auto;
+  margin: 0;
+  padding: 20px 0;
 
   &:hover {
-    background-color: $lightbrown;
-    color: $darkbrown;
+    background-color: $blue;
+    color: $darkblue;
   }
 
   &:active {
-    background-color: $lightbrown;
+    background-color: $blue;
   }
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $width-desktop) {
   .nav__list {
-    width: 700px;
+    width: 1200px;
   }
 }

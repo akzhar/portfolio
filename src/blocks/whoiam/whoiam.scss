@@ -2,42 +2,51 @@
   margin-bottom: 50px;
 }
 
-.whoiam__header {
-  margin: 0 20px 5px 20px;
+.whoiam__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whoiam__name {
+  text-transform: uppercase;
+  font-size: $s_3;
+  line-height: $l_3;
 }
 
 .whoiam__position {
   display: block;
 
-  margin: 0 20px 40px 20px;
-
   font-size: $s_2;
   line-height: $l_2;
   font-weight: 600;
-  color: $lightbrown;
+  color: $blue;
+}
+
+.whoiam__img {
+  background: url("../img/myphoto.jpg") no-repeat -24px -20px;
+  background-size: 150%;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 50px;
+  border: 1px solid $darkblue;
+  border-radius: 50%;
 }
 
 .whoiam__description {
   margin: 0 20px 20px 20px;
 }
 
-.whoiam__link {
-  color: $lightbrown;
-  font-weight: 600;
-
-  &:hover {
-    color: $darkbrown;
-    text-decoration: none;
-  }
-
-  &:active {
-    color: rgba(78,31,1,0.6);
-  }
-}
-
 @media (min-width: $width-desktop) {
   .whoiam {
     width: 50%;
+    margin: 0;
+  }
+
+  .whoiam__img {
+    background-position: -34px -26px;
+    width: 140px;
+    height: 140px;
   }
 
   .whoiam__position {

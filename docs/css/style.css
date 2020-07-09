@@ -132,9 +132,19 @@ template {
   display: none; }
 
 .head {
+  margin: 0 0 20px 0;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 44px; }
+
+.link {
+  color: #6389df;
+  font-weight: 600; }
+  .link:hover {
+    color: #1f2b6c;
+    text-decoration: none; }
+  .link:active {
+    color: rgba(78, 31, 1, 0.6); }
 
 .btn {
   display: block;
@@ -142,7 +152,7 @@ template {
   margin: 0 auto;
   width: 260px;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
@@ -178,33 +188,30 @@ template {
 .nav {
   position: fixed;
   width: 100%;
-  padding: 10px 0;
   background-color: #6389df;
   z-index: 2; }
 
 .nav__list {
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  width: 700px;
   margin: 0 auto;
   padding: 0;
   list-style: none; }
 
-.nav__item {
-  margin: 20px 0; }
-
-.nav__link {
-  display: inline;
-  padding: 20px 10px; }
-  .nav__link:hover {
+.nav__btn {
+  width: auto;
+  margin: 0;
+  padding: 20px 0; }
+  .nav__btn:hover {
     background-color: #6389df;
     color: #1f2b6c; }
-  .nav__link:active {
+  .nav__btn:active {
     background-color: #6389df; }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
   .nav__list {
-    width: 700px; } }
+    width: 1200px; } }
 
 .aboutme {
   background-color: #a3ccf4;
@@ -214,8 +221,8 @@ template {
 .aboutme__wrapper {
   width: 300px;
   margin: 0 auto;
-  padding-top: 150px;
-  padding-bottom: 25px; }
+  padding-top: 120px;
+  padding-bottom: 40px; }
 
 @media (min-width: 720px) {
   .aboutme__wrapper {
@@ -225,48 +232,56 @@ template {
   .aboutme__wrapper {
     display: flex;
     width: 1420px;
-    padding-top: 150px; } }
+    padding-top: 140px; } }
 
 .whoiam {
   margin-bottom: 50px; }
 
-.whoiam__header {
-  margin: 0 20px 5px 20px; }
+.whoiam__card {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.whoiam__name {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 44px; }
 
 .whoiam__position {
   display: block;
-  margin: 0 20px 40px 20px;
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
   color: #6389df; }
 
+.whoiam__img {
+  background: url("../img/myphoto.jpg") no-repeat -24px -20px;
+  background-size: 150%;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 50px;
+  border: 1px solid #1f2b6c;
+  border-radius: 50%; }
+
 .whoiam__description {
   margin: 0 20px 20px 20px; }
 
-.whoiam__link {
-  color: #6389df;
-  font-weight: 600; }
-  .whoiam__link:hover {
-    color: #1f2b6c;
-    text-decoration: none; }
-  .whoiam__link:active {
-    color: rgba(78, 31, 1, 0.6); }
-
 @media (min-width: 1440px) {
   .whoiam {
-    width: 50%; }
+    width: 50%;
+    margin: 0; }
+  .whoiam__img {
+    background-position: -34px -26px;
+    width: 140px;
+    height: 140px; }
   .whoiam__position {
     font-size: 30px;
     line-height: 44px; } }
 
-.skills__header {
-  margin: 0 20px 40px 20px; }
-
 .skills__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
   list-style: none; }
 
@@ -288,9 +303,6 @@ template {
   .skills__item::after {
     right: -25px; }
 
-.skills__btn {
-  margin: 20px auto; }
-
 @media (min-width: 1440px) {
   .skills {
     width: 50%; }
@@ -306,18 +318,14 @@ template {
 .portfolio__wrapper {
   width: 300px;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 40px; }
-
-.portfolio__header {
-  margin: 0 20px 40px 20px; }
+  padding: 40px 0; }
 
 .portfolio__intro {
   margin: 0 20px 20px 20px; }
 
 .portfolio__question {
   display: block;
-  margin: 40px 20px 20px 20px; }
+  margin: 20px 0; }
 
 .portfolio__btn {
   margin-bottom: 40px; }
@@ -328,8 +336,7 @@ template {
 
 @media (min-width: 1440px) {
   .portfolio__wrapper {
-    width: 1420px;
-    padding-top: 120px; } }
+    width: 1420px; } }
 
 .projects {
   display: flex;
@@ -344,7 +351,7 @@ template {
   width: 300px;
   height: 300px;
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 20px; }
 
 .projects__item img {
@@ -402,29 +409,18 @@ template {
     line-height: 30px; } }
 
 .contacts {
-  background-color: #000000;
+  background-color: black;
   min-width: 300px;
   text-align: center;
-  color: #ffffff; }
+  color: white; }
 
 .contacts__wrapper {
   width: 300px;
   margin: 0 auto;
   padding: 40px 0; }
 
-.contacts__header {
-  margin: 0 20px 40px 20px; }
-
 .contacts__email {
-  display: inline-block;
-  vertical-align: baseline;
-  color: #ffffff;
-  margin-bottom: 40px; }
-  .contacts__email:hover {
-    color: #6389df;
-    text-decoration: none; }
-  .contacts__email:active {
-    color: #6389df; }
+  margin: 0 0 40px 0; }
 
 @media (min-width: 720px) {
   .contacts__wrapper {

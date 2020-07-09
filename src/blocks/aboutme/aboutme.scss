@@ -1,5 +1,5 @@
 .aboutme {
-  background-color: $yellow;
+  background-color: $lightblue;
 
   min-width: 300px;
 
@@ -9,8 +9,8 @@
 .aboutme__wrapper {
   width: 300px;
   margin: 0 auto;
-  padding-top: 150px; //чтобы шапка не накрыла заголовок
-  padding-bottom: 25px;
+  padding-top: 120px; //чтобы шапка не накрыла заголовок
+  padding-bottom: 40px;
 }
 
 @media (min-width: $width-tablet) {
@@ -24,7 +24,6 @@
     display: flex;
 
     width: 1420px;
-
-    padding-top: 150px; //чтобы шапка не накрыла заголовок
+    padding-top: 140px;
   }
 }
