@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 0 20px 0;
 }
 
 .whoiam__name {
@@ -24,11 +25,11 @@
 }
 
 .whoiam__img {
-  background: url("../img/myphoto.jpg") no-repeat -24px -20px;
-  background-size: 150%;
+  background: url("../img/myphoto.jpg") no-repeat -6px;
+  background-size: cover;
   width: 100px;
   height: 100px;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 20px;
   border: 1px solid $darkblue;
   border-radius: 50%;
 }
@@ -44,9 +45,8 @@
   }
 
   .whoiam__img {
-    background-position: -34px -26px;
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
   }
 
   .whoiam__position {
